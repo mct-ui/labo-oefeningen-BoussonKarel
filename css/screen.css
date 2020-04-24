@@ -462,12 +462,11 @@ a:focus {
 @media (min-width: 768px) {
     .c-nav__list {
         display: flex;
-        margin-left: -16px;
-        margin-right: -16px;
+        align-items: center;
     }
 
     .c-nav__link {
-        padding: 8px 16px;
+        padding: 12px 16px;
     }
 }
 
@@ -503,6 +502,36 @@ a:focus {
 .c-link-cta:hover {
     color: #fff;
     background-position: right center;
+}
+
+/*
+    Components: Figure
+    ---
+    Styling for figures and their captions
+*/
+
+.c-figure {
+    position: relative;
+}
+
+.c-figure__caption {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+
+    text-align: right;
+
+    width: 260px;
+    
+    padding: 16px;
+
+    color: black;
+    background: #FFFFFF;
+    border-right: 4px solid #0053FB;
 }
 
 /*------------------------------------*\
